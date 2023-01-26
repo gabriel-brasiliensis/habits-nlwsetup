@@ -20,11 +20,30 @@
     <header>
       <img src="./assets/logo.svg" alt="Logomarca do aplicativo Habits" />
 
-      <button>
-        <img src="./assets/plus-icon.svg" alt="Ícone de sinal de mais roxo" />
-        <div>Registrar o meu dia</div>
-      </button>
+      <div class="header-buttons">
+        <button id="register-day">
+          <img src="./assets/plus-icon.svg" alt="Ícone de sinal de mais roxo" />
+          <div>Registrar o meu dia</div>
+        </button>
+        <button id="show-modal">
+          <img src="./assets/plus-icon.svg" alt="Ícone de sinal de mais roxo" />
+          <div>Registrar um novo hábito</div>
+        </button>
+      </div>
     </header>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span id="close-modal">&times;</span>
+        <!--
+          <form>
+          <input type="text">
+          <button id="create-habit"></button>
+        </form>
+        -->
+        
+      </div>
+    </div>
 
     <form id="habits-form">
       <div class="habits">
