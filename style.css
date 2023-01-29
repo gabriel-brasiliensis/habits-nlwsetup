@@ -98,11 +98,38 @@ button {
   font-weight: 600;
 }
 
-form {
+#habits-form {
   display: flex;
 
   padding: 182px 30px 30px;
   width: fit-content;
+}
+
+#create-habit-form {
+  width: 300px;
+  height: 180px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#create-habit-form input {
+  width: 300px;
+  height: 50px;
+  padding: 5px;
+
+  margin-bottom: 30px;
+
+  color: white;
+}
+
+#create-habit-form button {
+  width: 150px;
+
+  background-color: #39393d;
 }
 
 .habits {
