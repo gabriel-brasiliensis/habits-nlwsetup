@@ -100,7 +100,6 @@ button {
 
 #habits-form {
   display: flex;
-  flex-direction: column;
 
   padding: 182px 30px 30px;
   width: fit-content;
