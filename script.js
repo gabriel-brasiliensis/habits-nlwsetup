@@ -1,14 +1,16 @@
-const modal = document.getElementById("modal");
+const modal = document.querySelector("#modal");
 const form = document.querySelector("#habits-form");
 const registerDayButton = document.querySelector("#register-day");
 const modalShowButton = document.querySelector("#show-modal")
 const modalCloseButton = document.querySelector("#close-modal")
+const createHabitButton = document.querySelector("#create-habit")
 
 const nlwSetup = new NLWSetup(form);
 
 registerDayButton.addEventListener("click", addDay);
 modalShowButton.addEventListener("click", showModal)
 modalCloseButton.addEventListener("click", hideModal)
+createHabitButton.addEventListener("click", addHabit)
 form.addEventListener("change", save);
 
 function showModal() {
@@ -34,7 +36,9 @@ function addDay() {
 }
 
 function addHabit() {
+  var habitName = document.querySelector("#habit-name-input")
 
+  console.log(habitName)
 }
 
 function save() {
